@@ -1,5 +1,7 @@
-<html lang="en"><head>
-    <title>Code coverage report for node-npmtest-gulp-connect/gulp-connect/index.js</title>
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for node-npmtest-gulp-connect/node_modules/gulp-connect/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -192,7 +194,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-gulp-connect">npmtest-gulp-connect (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-gulp-connect/gulp-connect/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-gulp-connect/node_modules/gulp-connect/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">16.44% <small>(24 / 146)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -208,11 +210,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> » <a href="index.html">node-npmtest-gulp-connect/gulp-connect/</a> » index.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-gulp-connect/node_modules/gulp-connect/</a> &#187; index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tbody><tr><td class="line-count">1
+<tr><td class="line-count">1
 2
 3
 4
@@ -734,181 +736,181 @@ try {
 } catch (undefined) {}
 &nbsp;
 ConnectApp = (function() {
-<span class="fstat-no" title="function not covered">  function ConnectApp(options) {</span>
-<span class="cstat-no" title="statement not covered">    this.name = options.name || "Server";</span>
-<span class="cstat-no" title="statement not covered">    this.port = options.port || "8080";</span>
-<span class="cstat-no" title="statement not covered">    this.root = options.root || path.dirname(module.parent.id);</span>
-<span class="cstat-no" title="statement not covered">    this.host = options.host || "localhost";</span>
-<span class="cstat-no" title="statement not covered">    this.debug = options.debug || false;</span>
-<span class="cstat-no" title="statement not covered">    this.silent = options.silent || false;</span>
-<span class="cstat-no" title="statement not covered">    this.https = options.https || false;</span>
-<span class="cstat-no" title="statement not covered">    this.livereload = options.livereload || false;</span>
-<span class="cstat-no" title="statement not covered">    this.middleware = options.middleware || void 0;</span>
-<span class="cstat-no" title="statement not covered">    this.serverInit = options.serverInit || void 0;</span>
-<span class="cstat-no" title="statement not covered">    this.fallback = options.fallback || void 0;</span>
-<span class="cstat-no" title="statement not covered">    this.index = options.index;</span>
-<span class="cstat-no" title="statement not covered">    if (options.open) {</span>
-<span class="cstat-no" title="statement not covered">      this.oldMethod("open");</span>
+<span class="fstat-no" title="function not covered" >  function ConnectApp(options) {</span>
+<span class="cstat-no" title="statement not covered" >    this.name = options.name || "Server";</span>
+<span class="cstat-no" title="statement not covered" >    this.port = options.port || "8080";</span>
+<span class="cstat-no" title="statement not covered" >    this.root = options.root || path.dirname(module.parent.id);</span>
+<span class="cstat-no" title="statement not covered" >    this.host = options.host || "localhost";</span>
+<span class="cstat-no" title="statement not covered" >    this.debug = options.debug || false;</span>
+<span class="cstat-no" title="statement not covered" >    this.silent = options.silent || false;</span>
+<span class="cstat-no" title="statement not covered" >    this.https = options.https || false;</span>
+<span class="cstat-no" title="statement not covered" >    this.livereload = options.livereload || false;</span>
+<span class="cstat-no" title="statement not covered" >    this.middleware = options.middleware || void 0;</span>
+<span class="cstat-no" title="statement not covered" >    this.serverInit = options.serverInit || void 0;</span>
+<span class="cstat-no" title="statement not covered" >    this.fallback = options.fallback || void 0;</span>
+<span class="cstat-no" title="statement not covered" >    this.index = options.index;</span>
+<span class="cstat-no" title="statement not covered" >    if (options.open) {</span>
+<span class="cstat-no" title="statement not covered" >      this.oldMethod("open");</span>
     }
-<span class="cstat-no" title="statement not covered">    this.sockets = [];</span>
-<span class="cstat-no" title="statement not covered">    this.app = void 0;</span>
-<span class="cstat-no" title="statement not covered">    this.lr = void 0;</span>
-<span class="cstat-no" title="statement not covered">    this.run();</span>
+<span class="cstat-no" title="statement not covered" >    this.sockets = [];</span>
+<span class="cstat-no" title="statement not covered" >    this.app = void 0;</span>
+<span class="cstat-no" title="statement not covered" >    this.lr = void 0;</span>
+<span class="cstat-no" title="statement not covered" >    this.run();</span>
   }
 &nbsp;
-  ConnectApp.prototype.run = <span class="fstat-no" title="function not covered">function() {</span>
-<span class="cstat-no" title="statement not covered">    this.app = connect();</span>
-<span class="cstat-no" title="statement not covered">    this.handlers().forEach((<span class="fstat-no" title="function not covered">function(_this) {</span></span>
-<span class="cstat-no" title="statement not covered">      return <span class="fstat-no" title="function not covered">function(middleware) {</span></span>
-<span class="cstat-no" title="statement not covered">        if (typeof middleware === "object") {</span>
-<span class="cstat-no" title="statement not covered">          return _this.app.use(middleware[0], middleware[1]);</span>
+  ConnectApp.prototype.run = <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    this.app = connect();</span>
+<span class="cstat-no" title="statement not covered" >    this.handlers().forEach((<span class="fstat-no" title="function not covered" >function(_this) {</span></span>
+<span class="cstat-no" title="statement not covered" >      return <span class="fstat-no" title="function not covered" >function(middleware) {</span></span>
+<span class="cstat-no" title="statement not covered" >        if (typeof middleware === "object") {</span>
+<span class="cstat-no" title="statement not covered" >          return _this.app.use(middleware[0], middleware[1]);</span>
         } else {
-<span class="cstat-no" title="statement not covered">          return _this.app.use(middleware);</span>
+<span class="cstat-no" title="statement not covered" >          return _this.app.use(middleware);</span>
         }
       };
     })(this));
-<span class="cstat-no" title="statement not covered">    this.app.use(connect.directory(typeof this.root === "object" ? this.root[0] : this.root));</span>
-<span class="cstat-no" title="statement not covered">    if (this.https) {</span>
-<span class="cstat-no" title="statement not covered">      if (typeof this.https === 'boolean' || !this.https.key) {</span>
-<span class="cstat-no" title="statement not covered">        if (!(typeof this.https === "object")) {</span>
-<span class="cstat-no" title="statement not covered">          this.https = {};</span>
+<span class="cstat-no" title="statement not covered" >    this.app.use(connect.directory(typeof this.root === "object" ? this.root[0] : this.root));</span>
+<span class="cstat-no" title="statement not covered" >    if (this.https) {</span>
+<span class="cstat-no" title="statement not covered" >      if (typeof this.https === 'boolean' || !this.https.key) {</span>
+<span class="cstat-no" title="statement not covered" >        if (!(typeof this.https === "object")) {</span>
+<span class="cstat-no" title="statement not covered" >          this.https = {};</span>
         }
-<span class="cstat-no" title="statement not covered">        this.https.key = fs.readFileSync(__dirname + '/certs/server.key');</span>
-<span class="cstat-no" title="statement not covered">        this.https.cert = fs.readFileSync(__dirname + '/certs/server.crt');</span>
-<span class="cstat-no" title="statement not covered">        this.https.ca = fs.readFileSync(__dirname + '/certs/server.crt');</span>
-<span class="cstat-no" title="statement not covered">        this.https.passphrase = 'gulp';</span>
+<span class="cstat-no" title="statement not covered" >        this.https.key = fs.readFileSync(__dirname + '/certs/server.key');</span>
+<span class="cstat-no" title="statement not covered" >        this.https.cert = fs.readFileSync(__dirname + '/certs/server.crt');</span>
+<span class="cstat-no" title="statement not covered" >        this.https.ca = fs.readFileSync(__dirname + '/certs/server.crt');</span>
+<span class="cstat-no" title="statement not covered" >        this.https.passphrase = 'gulp';</span>
       }
-<span class="cstat-no" title="statement not covered">      this.server = (http2 || https).createServer(this.https, this.app);</span>
+<span class="cstat-no" title="statement not covered" >      this.server = (http2 || https).createServer(this.https, this.app);</span>
     } else {
-<span class="cstat-no" title="statement not covered">      this.server = http.createServer(this.app);</span>
+<span class="cstat-no" title="statement not covered" >      this.server = http.createServer(this.app);</span>
     }
-<span class="cstat-no" title="statement not covered">    if (this.serverInit) {</span>
-<span class="cstat-no" title="statement not covered">      this.serverInit(this.server);</span>
+<span class="cstat-no" title="statement not covered" >    if (this.serverInit) {</span>
+<span class="cstat-no" title="statement not covered" >      this.serverInit(this.server);</span>
     }
-<span class="cstat-no" title="statement not covered">    return this.server.listen(this.port, (<span class="fstat-no" title="function not covered">function(_this) {</span></span>
-<span class="cstat-no" title="statement not covered">      return <span class="fstat-no" title="function not covered">function(err) {</span></span>
-<span class="cstat-no" title="statement not covered">        var sockets, stopServer, stoped;</span>
-<span class="cstat-no" title="statement not covered">        if (err) {</span>
-<span class="cstat-no" title="statement not covered">          return _this.log("Error on starting server: " + err);</span>
+<span class="cstat-no" title="statement not covered" >    return this.server.listen(this.port, (<span class="fstat-no" title="function not covered" >function(_this) {</span></span>
+<span class="cstat-no" title="statement not covered" >      return <span class="fstat-no" title="function not covered" >function(err) {</span></span>
+<span class="cstat-no" title="statement not covered" >        var sockets, stopServer, stoped;</span>
+<span class="cstat-no" title="statement not covered" >        if (err) {</span>
+<span class="cstat-no" title="statement not covered" >          return _this.log("Error on starting server: " + err);</span>
         } else {
-<span class="cstat-no" title="statement not covered">          _this.log(_this.name + " started http" + (_this.https ? 's' : '') + "://" + _this.host + ":" + _this.port);</span>
-<span class="cstat-no" title="statement not covered">          stoped = false;</span>
-<span class="cstat-no" title="statement not covered">          sockets = [];</span>
-<span class="cstat-no" title="statement not covered">          _this.server.on("close", <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">            if (!stoped) {</span>
-<span class="cstat-no" title="statement not covered">              stoped = true;</span>
-<span class="cstat-no" title="statement not covered">              return _this.log(_this.name + " stopped");</span>
+<span class="cstat-no" title="statement not covered" >          _this.log(_this.name + " started http" + (_this.https ? 's' : '') + "://" + _this.host + ":" + _this.port);</span>
+<span class="cstat-no" title="statement not covered" >          stoped = false;</span>
+<span class="cstat-no" title="statement not covered" >          sockets = [];</span>
+<span class="cstat-no" title="statement not covered" >          _this.server.on("close", <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >            if (!stoped) {</span>
+<span class="cstat-no" title="statement not covered" >              stoped = true;</span>
+<span class="cstat-no" title="statement not covered" >              return _this.log(_this.name + " stopped");</span>
             }
           });
-<span class="cstat-no" title="statement not covered">          _this.server.on("connection", <span class="fstat-no" title="function not covered">function(socket) {</span></span>
-<span class="cstat-no" title="statement not covered">            _this.logDebug("Received incoming connection from " + (socket.address().address));</span>
-<span class="cstat-no" title="statement not covered">            _this.sockets.push(socket);</span>
-<span class="cstat-no" title="statement not covered">            return socket.on("close", <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">              return _this.sockets.splice(_this.sockets.indexOf(socket), 1);</span>
+<span class="cstat-no" title="statement not covered" >          _this.server.on("connection", <span class="fstat-no" title="function not covered" >function(socket) {</span></span>
+<span class="cstat-no" title="statement not covered" >            _this.logDebug("Received incoming connection from " + (socket.address().address));</span>
+<span class="cstat-no" title="statement not covered" >            _this.sockets.push(socket);</span>
+<span class="cstat-no" title="statement not covered" >            return socket.on("close", <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >              return _this.sockets.splice(_this.sockets.indexOf(socket), 1);</span>
             });
           });
-<span class="cstat-no" title="statement not covered">          _this.server.on("request", <span class="fstat-no" title="function not covered">function(request, response) {</span></span>
-<span class="cstat-no" title="statement not covered">            return _this.logDebug("Received request " + request.method + " " + request.url);</span>
+<span class="cstat-no" title="statement not covered" >          _this.server.on("request", <span class="fstat-no" title="function not covered" >function(request, response) {</span></span>
+<span class="cstat-no" title="statement not covered" >            return _this.logDebug("Received request " + request.method + " " + request.url);</span>
           });
-<span class="cstat-no" title="statement not covered">          _this.server.on("error", <span class="fstat-no" title="function not covered">function(err) {</span></span>
-<span class="cstat-no" title="statement not covered">            return _this.log(err.toString());</span>
+<span class="cstat-no" title="statement not covered" >          _this.server.on("error", <span class="fstat-no" title="function not covered" >function(err) {</span></span>
+<span class="cstat-no" title="statement not covered" >            return _this.log(err.toString());</span>
           });
-<span class="cstat-no" title="statement not covered">          stopServer = <span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">            if (!stoped) {</span>
-<span class="cstat-no" title="statement not covered">              _this.sockets.forEach(<span class="fstat-no" title="function not covered">function(socket) {</span></span>
-<span class="cstat-no" title="statement not covered">                return socket.destroy();</span>
+<span class="cstat-no" title="statement not covered" >          stopServer = <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >            if (!stoped) {</span>
+<span class="cstat-no" title="statement not covered" >              _this.sockets.forEach(<span class="fstat-no" title="function not covered" >function(socket) {</span></span>
+<span class="cstat-no" title="statement not covered" >                return socket.destroy();</span>
               });
-<span class="cstat-no" title="statement not covered">              _this.server.close();</span>
-<span class="cstat-no" title="statement not covered">              return process.nextTick(<span class="fstat-no" title="function not covered">function() {</span></span>
-<span class="cstat-no" title="statement not covered">                return process.exit(0);</span>
+<span class="cstat-no" title="statement not covered" >              _this.server.close();</span>
+<span class="cstat-no" title="statement not covered" >              return process.nextTick(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >                return process.exit(0);</span>
               });
             }
           };
-<span class="cstat-no" title="statement not covered">          process.on("SIGINT", stopServer);</span>
-<span class="cstat-no" title="statement not covered">          process.on("exit", stopServer);</span>
-<span class="cstat-no" title="statement not covered">          if (_this.livereload) {</span>
-<span class="cstat-no" title="statement not covered">            tiny_lr.Server.prototype.error = <span class="fstat-no" title="function not covered">function() {</span>};</span>
-<span class="cstat-no" title="statement not covered">            if (_this.https) {</span>
-<span class="cstat-no" title="statement not covered">              _this.lr = tiny_lr({</span>
+<span class="cstat-no" title="statement not covered" >          process.on("SIGINT", stopServer);</span>
+<span class="cstat-no" title="statement not covered" >          process.on("exit", stopServer);</span>
+<span class="cstat-no" title="statement not covered" >          if (_this.livereload) {</span>
+<span class="cstat-no" title="statement not covered" >            tiny_lr.Server.prototype.error = <span class="fstat-no" title="function not covered" >function() {</span>};</span>
+<span class="cstat-no" title="statement not covered" >            if (_this.https) {</span>
+<span class="cstat-no" title="statement not covered" >              _this.lr = tiny_lr({</span>
                 key: _this.https.key || fs.readFileSync(__dirname + '/certs/server.key'),
                 cert: _this.https.cert || fs.readFileSync(__dirname + '/certs/server.crt')
               });
             } else {
-<span class="cstat-no" title="statement not covered">              _this.lr = tiny_lr();</span>
+<span class="cstat-no" title="statement not covered" >              _this.lr = tiny_lr();</span>
             }
-<span class="cstat-no" title="statement not covered">            _this.lr.listen(_this.livereload.port);</span>
-<span class="cstat-no" title="statement not covered">            return _this.log("LiveReload started on port " + _this.livereload.port);</span>
+<span class="cstat-no" title="statement not covered" >            _this.lr.listen(_this.livereload.port);</span>
+<span class="cstat-no" title="statement not covered" >            return _this.log("LiveReload started on port " + _this.livereload.port);</span>
           }
         }
       };
     })(this));
   };
 &nbsp;
-  ConnectApp.prototype.handlers = <span class="fstat-no" title="function not covered">function() {</span>
-<span class="cstat-no" title="statement not covered">    var steps;</span>
-<span class="cstat-no" title="statement not covered">    steps = this.middleware ? this.middleware.call(this, connect, this) : [];</span>
-<span class="cstat-no" title="statement not covered">    if (this.livereload) {</span>
-<span class="cstat-no" title="statement not covered">      if (typeof this.livereload === "boolean") {</span>
-<span class="cstat-no" title="statement not covered">        this.livereload = {};</span>
+  ConnectApp.prototype.handlers = <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    var steps;</span>
+<span class="cstat-no" title="statement not covered" >    steps = this.middleware ? this.middleware.call(this, connect, this) : [];</span>
+<span class="cstat-no" title="statement not covered" >    if (this.livereload) {</span>
+<span class="cstat-no" title="statement not covered" >      if (typeof this.livereload === "boolean") {</span>
+<span class="cstat-no" title="statement not covered" >        this.livereload = {};</span>
       }
-<span class="cstat-no" title="statement not covered">      if (!this.livereload.port) {</span>
-<span class="cstat-no" title="statement not covered">        this.livereload.port = 35729;</span>
+<span class="cstat-no" title="statement not covered" >      if (!this.livereload.port) {</span>
+<span class="cstat-no" title="statement not covered" >        this.livereload.port = 35729;</span>
       }
-<span class="cstat-no" title="statement not covered">      steps.unshift(liveReload(this.livereload));</span>
+<span class="cstat-no" title="statement not covered" >      steps.unshift(liveReload(this.livereload));</span>
     }
-<span class="cstat-no" title="statement not covered">    if (this.index === true) {</span>
-<span class="cstat-no" title="statement not covered">      this.index = "index.html";</span>
+<span class="cstat-no" title="statement not covered" >    if (this.index === true) {</span>
+<span class="cstat-no" title="statement not covered" >      this.index = "index.html";</span>
     }
-<span class="cstat-no" title="statement not covered">    if (typeof this.root === "object") {</span>
-<span class="cstat-no" title="statement not covered">      this.root.forEach(<span class="fstat-no" title="function not covered">function(path) {</span></span>
-<span class="cstat-no" title="statement not covered">        return steps.push(connect["static"](path, {</span>
+<span class="cstat-no" title="statement not covered" >    if (typeof this.root === "object") {</span>
+<span class="cstat-no" title="statement not covered" >      this.root.forEach(<span class="fstat-no" title="function not covered" >function(path) {</span></span>
+<span class="cstat-no" title="statement not covered" >        return steps.push(connect["static"](path, {</span>
           index: this.index
         }));
       });
     } else {
-<span class="cstat-no" title="statement not covered">      steps.push(connect["static"](this.root, {</span>
+<span class="cstat-no" title="statement not covered" >      steps.push(connect["static"](this.root, {</span>
         index: this.index
       }));
     }
-<span class="cstat-no" title="statement not covered">    if (this.fallback) {</span>
-<span class="cstat-no" title="statement not covered">      steps.push((<span class="fstat-no" title="function not covered">function(_this) {</span></span>
-<span class="cstat-no" title="statement not covered">        return <span class="fstat-no" title="function not covered">function(req, res) {</span></span>
-<span class="cstat-no" title="statement not covered">          var fallbackPath;</span>
-<span class="cstat-no" title="statement not covered">          fallbackPath = _this.fallback;</span>
-<span class="cstat-no" title="statement not covered">          if (typeof _this.fallback === "function") {</span>
-<span class="cstat-no" title="statement not covered">            fallbackPath = _this.fallback(req, res);</span>
+<span class="cstat-no" title="statement not covered" >    if (this.fallback) {</span>
+<span class="cstat-no" title="statement not covered" >      steps.push((<span class="fstat-no" title="function not covered" >function(_this) {</span></span>
+<span class="cstat-no" title="statement not covered" >        return <span class="fstat-no" title="function not covered" >function(req, res) {</span></span>
+<span class="cstat-no" title="statement not covered" >          var fallbackPath;</span>
+<span class="cstat-no" title="statement not covered" >          fallbackPath = _this.fallback;</span>
+<span class="cstat-no" title="statement not covered" >          if (typeof _this.fallback === "function") {</span>
+<span class="cstat-no" title="statement not covered" >            fallbackPath = _this.fallback(req, res);</span>
           }
-<span class="cstat-no" title="statement not covered">          return require('fs').createReadStream(fallbackPath).pipe(res);</span>
+<span class="cstat-no" title="statement not covered" >          return require('fs').createReadStream(fallbackPath).pipe(res);</span>
         };
       })(this));
     }
-<span class="cstat-no" title="statement not covered">    return steps;</span>
+<span class="cstat-no" title="statement not covered" >    return steps;</span>
   };
 &nbsp;
-  ConnectApp.prototype.log = <span class="fstat-no" title="function not covered">function(text) {</span>
-<span class="cstat-no" title="statement not covered">    if (!this.silent) {</span>
-<span class="cstat-no" title="statement not covered">      return util.log(util.colors.green(text));</span>
+  ConnectApp.prototype.log = <span class="fstat-no" title="function not covered" >function(text) {</span>
+<span class="cstat-no" title="statement not covered" >    if (!this.silent) {</span>
+<span class="cstat-no" title="statement not covered" >      return util.log(util.colors.green(text));</span>
     }
   };
 &nbsp;
-  ConnectApp.prototype.logWarning = <span class="fstat-no" title="function not covered">function(text) {</span>
-<span class="cstat-no" title="statement not covered">    if (!this.silent) {</span>
-<span class="cstat-no" title="statement not covered">      return util.log(util.colors.yellow(text));</span>
+  ConnectApp.prototype.logWarning = <span class="fstat-no" title="function not covered" >function(text) {</span>
+<span class="cstat-no" title="statement not covered" >    if (!this.silent) {</span>
+<span class="cstat-no" title="statement not covered" >      return util.log(util.colors.yellow(text));</span>
     }
   };
 &nbsp;
-  ConnectApp.prototype.logDebug = <span class="fstat-no" title="function not covered">function(text) {</span>
-<span class="cstat-no" title="statement not covered">    if (this.debug) {</span>
-<span class="cstat-no" title="statement not covered">      return util.log(util.colors.blue(text));</span>
+  ConnectApp.prototype.logDebug = <span class="fstat-no" title="function not covered" >function(text) {</span>
+<span class="cstat-no" title="statement not covered" >    if (this.debug) {</span>
+<span class="cstat-no" title="statement not covered" >      return util.log(util.colors.blue(text));</span>
     }
   };
 &nbsp;
-  ConnectApp.prototype.oldMethod = <span class="fstat-no" title="function not covered">function(type) {</span>
-<span class="cstat-no" title="statement not covered">    var text;</span>
-<span class="cstat-no" title="statement not covered">    text = 'does not work in gulp-connect v 2.*. Please read "readme" https://github.com/AveVlad/gulp-connect';</span>
-<span class="cstat-no" title="statement not covered">    switch (type) {</span>
+  ConnectApp.prototype.oldMethod = <span class="fstat-no" title="function not covered" >function(type) {</span>
+<span class="cstat-no" title="statement not covered" >    var text;</span>
+<span class="cstat-no" title="statement not covered" >    text = 'does not work in gulp-connect v 2.*. Please read "readme" https://github.com/AveVlad/gulp-connect';</span>
+<span class="cstat-no" title="statement not covered" >    switch (type) {</span>
       case "open":
-<span class="cstat-no" title="statement not covered">        return this.logWarning("Option open " + text);</span>
+<span class="cstat-no" title="statement not covered" >        return this.logWarning("Option open " + text);</span>
     }
   };
 &nbsp;
@@ -917,21 +919,21 @@ ConnectApp = (function() {
 })();
 &nbsp;
 module.exports = {
-  server: <span class="fstat-no" title="function not covered">function(options) {</span>
-<span class="cstat-no" title="statement not covered">    var app;</span>
-<span class="cstat-no" title="statement not covered">    if (options == null) {</span>
-<span class="cstat-no" title="statement not covered">      options = {};</span>
+  server: <span class="fstat-no" title="function not covered" >function(options) {</span>
+<span class="cstat-no" title="statement not covered" >    var app;</span>
+<span class="cstat-no" title="statement not covered" >    if (options == null) {</span>
+<span class="cstat-no" title="statement not covered" >      options = {};</span>
     }
-<span class="cstat-no" title="statement not covered">    app = new ConnectApp(options);</span>
-<span class="cstat-no" title="statement not covered">    apps.push(app);</span>
-<span class="cstat-no" title="statement not covered">    return app;</span>
+<span class="cstat-no" title="statement not covered" >    app = new ConnectApp(options);</span>
+<span class="cstat-no" title="statement not covered" >    apps.push(app);</span>
+<span class="cstat-no" title="statement not covered" >    return app;</span>
   },
-  reload: <span class="fstat-no" title="function not covered">function() {</span>
-<span class="cstat-no" title="statement not covered">    return es.map(<span class="fstat-no" title="function not covered">function(file, callback) {</span></span>
-<span class="cstat-no" title="statement not covered">      apps.forEach((<span class="fstat-no" title="function not covered">function(_this) {</span></span>
-<span class="cstat-no" title="statement not covered">        return <span class="fstat-no" title="function not covered">function(app) {</span></span>
-<span class="cstat-no" title="statement not covered">          if (app.livereload &amp;&amp; typeof app.lr === "object") {</span>
-<span class="cstat-no" title="statement not covered">            return app.lr.changed({</span>
+  reload: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    return es.map(<span class="fstat-no" title="function not covered" >function(file, callback) {</span></span>
+<span class="cstat-no" title="statement not covered" >      apps.forEach((<span class="fstat-no" title="function not covered" >function(_this) {</span></span>
+<span class="cstat-no" title="statement not covered" >        return <span class="fstat-no" title="function not covered" >function(app) {</span></span>
+<span class="cstat-no" title="statement not covered" >          if (app.livereload &amp;&amp; typeof app.lr === "object") {</span>
+<span class="cstat-no" title="statement not covered" >            return app.lr.changed({</span>
               body: {
                 files: file.path
               }
@@ -939,23 +941,22 @@ module.exports = {
           }
         };
       })(this));
-<span class="cstat-no" title="statement not covered">      return callback(null, file);</span>
+<span class="cstat-no" title="statement not covered" >      return callback(null, file);</span>
     });
   },
-  serverClose: <span class="fstat-no" title="function not covered">function() {</span>
-<span class="cstat-no" title="statement not covered">    apps.forEach(<span class="fstat-no" title="function not covered">function(app) {</span></span>
-<span class="cstat-no" title="statement not covered">      return app.server.close();</span>
+  serverClose: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    apps.forEach(<span class="fstat-no" title="function not covered" >function(app) {</span></span>
+<span class="cstat-no" title="statement not covered" >      return app.server.close();</span>
     });
-<span class="cstat-no" title="statement not covered">    return apps = [];</span>
+<span class="cstat-no" title="statement not covered" >    return apps = [];</span>
   }
 };
 &nbsp;
 &nbsp;</pre></td></tr>
-</tbody></table></pre>
+</table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 07:08:36 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Sun Apr 16 2017 08:10:25 GMT+0000 (UTC)</div>
 </div>
-
-
-</body></html>
+</body>
+</html>
