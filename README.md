@@ -1,6 +1,6 @@
 # npmtest-gulp-connect
 
-#### test coverage for  [gulp-connect (v5.0.0)](https://github.com/avevlad/gulp-connect#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-connect.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-connect) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-connect.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-connect)
+#### basic test coverage for  [gulp-connect (v5.0.0)](https://github.com/avevlad/gulp-connect#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-connect.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-connect) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-connect.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-connect)
 
 #### Gulp plugin to run a webserver (with LiveReload)
 
